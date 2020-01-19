@@ -1,0 +1,12 @@
+Mutation:
+  type: object
+  config:
+    fields:
+      NewAstronaut:
+        type: NewAstronautPayload
+        description: "Create a new astronaut."
+        resolve: "@=mutation('NewAstronaut', [args['input']['pseudo'], args['input']['gradeId'], args['input']['planetId']])"
+        args:
+          input:
+            type: AstronautInput
+            description: "Required informations to create a new astronaut."

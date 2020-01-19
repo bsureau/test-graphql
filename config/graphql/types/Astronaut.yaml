@@ -1,0 +1,17 @@
+Astronaut:
+  type: object
+  config:
+    description: "A person who has been trained for travelling in space."
+    fields:
+      id:
+        type: 'Int!'
+        description: "Astronaut's ID."
+      pseudo:
+        type: 'String!'
+        description: "Astronaut's pseudonym."
+      grade:
+        type: 'Grade'
+        description: "Astronaut's grade."
+      planet:
+        type: 'Planet'
+        description: "Planet explored by the astronaut."

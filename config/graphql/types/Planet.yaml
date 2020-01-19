@@ -1,0 +1,14 @@
+Planet:
+  type: object
+  config:
+    description: "An extremely large, round mass of rock and metal, such as Earth, or of gas, such as Jupiter, that moves in a circular path around the sun or another star."
+    fields:
+      id:
+        type: 'Int!'
+        description: "Planet ID."
+      name:
+        type: 'String!'
+        description: "Planet name."
+      astronauts:
+        type: '[Astronaut]'
+        description: "Astronaut on planet."

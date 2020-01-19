@@ -1,0 +1,8 @@
+NewAstronautPayload:
+  type: object
+  config:
+    description: "Returned object when creating a new Astronaut."
+    fields:
+      astronaut:
+        type: 'Astronaut'
+        description: "New created astronaut"

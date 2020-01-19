@@ -1,0 +1,14 @@
+AstronautInput:
+  type: input-object
+  config:
+    description: "Required informations to create a new astronaut."
+    fields:
+      pseudo:
+        type: 'String!'
+        description: "Astronaut's pseudonym."
+      gradeId:
+        type: 'Int!'
+        description: "Astronaut's grade ID."
+      planetId:
+        type: 'Int!'
+        description: "Astronaut's planet ID."

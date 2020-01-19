@@ -1,0 +1,11 @@
+Grade:
+  type: object
+  config:
+    description: "The astronaut's grade is based on his or her academic achievements and experience."
+    fields:
+      id:
+        type: 'Int!'
+        description: "Grade ID."
+      name:
+        type: 'String!'
+        description: "Grade name."

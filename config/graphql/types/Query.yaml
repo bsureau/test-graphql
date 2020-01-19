@@ -1,0 +1,24 @@
+Query:
+  type: object
+  config:
+    fields:
+      Astronaut:
+        type: 'Astronaut'
+        description: "Resolves Astronaut using its ID."
+        args:
+          id:
+            type: 'Int!'
+            description: "Astronaut's ID."
+        resolve: "@=resolver('Astronaut', [args['id']])"
+      Astronauts:
+        type: '[Astronaut]'
+        description: "Resolves all astronauts."
+        resolve: "@=resolver('Astronauts')"
+      Planet:
+        type: 'Planet'
+        description: "Resolve Planet using its ID."
+        args:
+          id:
+            type: 'Int!'
+            description: "Planet ID."
+        resolve: "@=resolver('Planet', [args['id']])"
